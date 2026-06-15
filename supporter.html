@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Pendukung - Traktir</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Konfigurasi Tema Warna (Sama dengan halaman utama) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'cream': '#fbf9f4',
+                        'brown-dark': '#5a4634',
+                        'brown-light': '#8e735b',
+                        'green-pubi': '#3f6847'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS untuk detail kecil -->
+    <style>
+        /* Garis putus-putus antar list */
+        .border-dotted-custom {
+            border-bottom: 1.5px dashed #d8cec0;
+        }
+    </style>
+</head>
+<body class="bg-[#f4f7f8] min-h-screen p-6 md:p-10 flex flex-col items-center">
+
+    <!-- Header Baru Sesuai Capture_4.PNG -->
+    <header class="w-full bg-[#3f6847] py-16 px-6 text-center text-white mb-10">
+        <h1 class="text-3xl md:text-4xl font-extrabold mb-3">Hall of Supporters</h1>
+        <p class="text-lg opacity-90">Terima kasih atas kopi dan dukungan luar biasanya!</p>
+    </header>
+
+    <!-- Grid Container -->
+    <div class="max-w-4xl w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mb-10">
+
+        <!-- Card 8 -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Someone</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">13 Juni 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">
+                    Rp 1996
+                </span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1"></p>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none"></h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">11 Juni 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">
+                    Rp 4803
+                </span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1"></p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">zunocihuy</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">11 Juni 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">
+                    Rp 1.983
+                </span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Ini mo download error min"</p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Djoko</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">8 Juni 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">
+                    Rp 9791
+                </span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Semangat dan terimakasih"</p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Edo ad</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">28 Mei 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">
+                    Rp 1.270
+                </span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Nih"</p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none"></h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">20 Mei 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">
+                    Rp 1.988
+                </span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1"></p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Jhon</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">20 Mei 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">
+                    Rp 1.143
+                </span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Makasih"</p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Karin</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">16 Mei 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">
+                    Rp 1.035
+                </span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Mantap"</p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Roy</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">16 Mei 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">
+                    Rp 1.646
+                </span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Dunia dalam sejarah thanks!"</p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Sakura</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">16 Mei 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">
+                    Rp 2.486
+                </span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"ok gas"</p>
+        </div>
+        
+        <!-- Card 1 -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Maf</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">5 Mar 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">
+                    Rp 5000
+                </span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Gg kontennya nya"</p>
+        </div>
+
+         <!-- === BATCH 1 (Capture) === -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Syuhada</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">19 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 500</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1 break-all">"https://share.google/TWu8vwsalkquFt9ab"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Mud</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">17 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 1.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Berhasil"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Dicky</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">17 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 1.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">&nbsp;</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Azky</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">16 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 500</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Gua mau coba "</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Debi</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">16 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 1.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"YEY"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Bee</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">16 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 1.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Keren"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Liban</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">16 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 1.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Semangat kak"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Dani</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">15 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 2.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Buy apk bug"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">adit</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">15 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 500</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"tu gw dah"</p>
+        </div>
+
+        <!-- === BATCH 2 (Capture 1) === -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">&nbsp;</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">15 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 500</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"maaf ya cm sedikit kak lg boke😭"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">kiwil</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">15 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 500</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">&nbsp;</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">rafaaa</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">13 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 500</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">&nbsp;</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Dewi Yasa</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">12 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 10.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Terimakasih "</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Frost</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">12 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 500</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Semangat"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">al</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">11 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 2.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"bg minjem duit lima ribu buat isian"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Tanto</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">10 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 1.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Cara hack gimana nih"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Siapa ya</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">10 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 1.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Semangat "</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Nanya</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">9 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 1.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">&nbsp;</p>
+        </div>
+
+        <!-- === BATCH 3 (Capture 2) === -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Anjay</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">7 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 1.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Mau ngehak wa org yang ambil akunku"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">&nbsp;</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">6 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 1.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">&nbsp;</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">&nbsp;</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">6 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 1.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">&nbsp;</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Adrian</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">5 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 500</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Semangat bg tapi jangan lupa benerin bug nya"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">ridho</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">5 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 1.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"bug wa"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">aji icikiwir</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">3 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 500</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"semangat bangg"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">prana panggil aja na</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">3 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 1.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"semangat bg admin ganteng makasih min udah bikin website ini"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Nizam</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">2 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 1.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Tetap semangat "</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Rafael</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">1 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 500</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Semangat"</p>
+        </div>
+
+        <!-- === BATCH 4 (Capture 3) === -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Risky</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">1 Apr 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 500</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Makasi"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Slbew</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">26 Mar 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 500</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Smngt"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Shinji</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">25 Mar 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 5.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Semangat bang muach"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Dimz</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">24 Mar 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 500</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">&nbsp;</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">abayy</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">23 Mar 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 500</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"semangat"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">alvaroo</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">22 Mar 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 2.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"semoga sehat bang"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Riiz</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">22 Mar 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 2.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"231"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Iban</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">22 Mar 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 1.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">&nbsp;</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">YANS GOOD</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">22 Mar 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 1.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Mantap"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Asep</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">22 Mar 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 2.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Bug watshap yg nge Hb gua"</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">&nbsp;</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">19 Mar 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 10.000</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">&nbsp;</p>
+        </div>
+
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">yudha</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">17 Mar 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">Rp 500</span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"mantap "</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Angga</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">24 Feb 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">
+                    Rp 5000
+                </span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Maaf"</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Haris</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">23 Feb 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">
+                    Rp 2.000
+                </span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Semangat terus untuk ngembangin konten ini 👍"</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Fajar</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">20 Feb 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">
+                    Rp 3.000
+                </span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Cuma 3k ya bang"</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Kevin</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">22 Jan 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">
+                    Rp 750
+                </span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Gas gan"</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Andika</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">17 Jan 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">
+                    Rp 1.000
+                </span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"Mantap bro!"</p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="bg-cream rounded-xl shadow-sm border border-[#e3dac9] border-t-[4px] border-t-green-pubi p-5 flex flex-col">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <h3 class="font-bold text-brown-dark text-base leading-none">Someone</h3>
+                    <p class="text-[10px] text-gray-400 mt-1.5">17 Jan 2026</p>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full border border-green-pubi text-green-pubi text-xs font-bold bg-[#eef3f0]">
+                    Rp 600
+                </span>
+            </div>
+            <div class="border-dotted-custom w-full mb-3"></div>
+            <p class="text-xs text-brown-light italic flex-1">"semangat yaa"</p>
+        </div>
+
+    </div>
+
+    <!-- Tombol Ikut Traktir Kopi -->
+    <a href="index.html" class="flex items-center justify-center gap-2 bg-[#9c6130] hover:bg-[#855127] text-white font-bold py-2.5 px-6 rounded-md shadow-md transition-colors text-sm">
+        ☕ Ikut Traktir Kopi
+    </a>
+
+</body>
+</html>
