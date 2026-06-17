@@ -58,11 +58,26 @@
 <body>
 
     <div class="bg-cream w-full max-w-[400px] rounded-xl shadow-lg border border-gray-100 overflow-hidden relative">
+
+        <!-- Navbar Header -->
+    <nav class="bg-cream shadow-sm border-b border-brown-light w-full sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <span class="text-2xl">☕</span>
+                    <span class="font-bold text-brown-dark text-lg tracking-tight">Dunia Dalam Sejarah</span>
+                </div>
+                <!-- Nav Links -->
+                <!-- -->
+            </div>
+        </div>
+    </nav>
         
         <!-- Header -->
         <div class="pt-6 pb-4 px-6 text-center">
             <h1 class="text-xl font-extrabold text-brown-dark flex justify-center items-center gap-2">
-                <span class="text-red-500 text-2xl">❤️</span> Support Kami lewat QRIS
+                <span class="text-red-500 text-2xl">❤️</span> Apresiasi Sepesial lewat QRIS
             </h1>
         </div>
 
@@ -89,7 +104,7 @@
 
             <!-- Submit Button -->
             <button id="btn-pay" class="w-full bg-green-submit text-white font-bold py-3 rounded-lg shadow-md transition duration-200">
-                Bayar Traktiran
+                Lanjutkan Pembayaran
             </button>
         </div>
 
@@ -128,6 +143,16 @@
 
             <div class="text-center mt-5">
                 <a href="supporter.html" class="text-blue-600 text-sm font-semibold hover:underline">Lihat Semua Pendukung →</a>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="border-brown-light mx-6">
+        <div class="space-y-3 p-6">
+        <p class="text-sm text-brown-dark font-medium">Apresiasi Spesial adalah bentuk dukungan dari para kalian yang dermawan kepada <b>Dunia Dalam Sejarah</b> dalam bentuk kontribusi finansial melalui platform resmi kami. Kontribusi ini bersifat sukarela dan tidak memberikan hak kepemilikan atau kendali atas konten maupun kebijakan kami.</p>
+
+        <div class="text-center mt-5">
+                <a href="apresiasi.html" class="text-blue-600 text-sm font-semibold hover:underline">Selengkapnya →</a>
             </div>
         </div>
 
@@ -290,7 +315,7 @@
 
                 // Prepare Modal Data
                 modalAmount.textContent = `Rp ${formatCurrency(selectedAmount)}`;
-                modalName.textContent = nameInput.value.trim() !== '' ? nameInput.value : '--';
+                modalName.textContent = nameInput.value.trim() !== '' ? nameInput.value : 'Hamba Allah';
                 modalMessage.textContent = messageInput.value.trim() !== '' ? messageInput.value : '-';
 
                 // Menentukan gambar QRIS yang sesuai
@@ -313,7 +338,7 @@
 
                 // Simulate API Call delay
                 setTimeout(() => {
-                    payBtn.innerHTML = 'Bayar Traktiran';
+                    payBtn.innerHTML = 'Lanjutkan Pembayaran';
                     payBtn.disabled = false;
                     
                     // Open Modal logic
